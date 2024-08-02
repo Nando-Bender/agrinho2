@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(208, 255, 131);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(187, 59, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    color: rgb(0, 0, 0);
+}
+
+.pagina1 img {
+    width: 100%;
+    height: auto;
+    border: 5px solid rgb(102, 32, 0);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: rgb(187, 59, 0);
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgb(255, 87, 34);
+}
+
+.titulo1 {
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    background-color: white;
+    border: 10px solid rgb(187, 59, 0);
+    border-radius: 30px;
+    text-align: center;
+}
+
+main ul img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid rgb(102, 32, 0);
+}
+
+main ul p {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+    main ul {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    main ul {
+        flex: 1 1 100%;
+    }
+}
